@@ -69,6 +69,11 @@ body {
     line-height: 14px;
 }
 
+.storage__info__bubble span {
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+
 
 
 
@@ -101,6 +106,7 @@ GENERAL LAYOUT
 .flex--main > * {
     flex: 0 1 100%;
     background-color: var(--dark-blue);
+    box-shadow: 0 75px 100px -30px rgba(0, 0, 0, 0.24776);
 }
 
 .storage__logo {
@@ -108,7 +114,6 @@ GENERAL LAYOUT
 }
 
 .storage__icons {
-    box-shadow: 0 75px 100px -30px rgba(0, 0, 0, 0.24776);
     border-radius: 10px 100px 10px 10px;
     padding: 40px 108px 40px 41px;
     max-width: 326px;
@@ -134,5 +139,73 @@ GENERAL LAYOUT
 .storage__icons__icon-3 {
     background-image: url("../images/icon-upload.svg")
 }
+
+.storage__info,
+.storage__info__bubble {
+    border-radius: 10px;
+}
+
+.storage__info {
+    text-align: center;
+    padding: 32px 32px 52px 32px;
+    position: relative;
+}
+
+.storage__info__text {
+    margin-bottom: 16px;
+}
+
+.storage__info__used {
+    margin-bottom: 10px;
+}
+
+.storage__info__bubble {
+    background-color: #fff;
+    color: var(--very-dark-blue);
+    padding: 16px 24px;
+    max-width: 179px;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: -36px;
+}
+
+.storage__info__used {
+
+}
+
+.storage__info__used[value] {
+    /* Reset the default appearance */
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 100%;
+    height: 20px;
+    position: relative;
+}
+
+.storage__info__used[value]::-webkit-progress-bar {
+    background-color: var(--very-dark-blue);
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.storage__info__used[value]::-webkit-progress-value {
+    background-image: var(--gradient);
+    border-radius: 8px;
+}
+
+.storage__info__used[value]::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    right: calc(19% + 2px);
+    top: 5px;
+    background-color: #fff;
+}
+
 
 
