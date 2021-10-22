@@ -8,31 +8,39 @@
   
   <title>Frontend Mentor | Fylo data storage component</title>
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- My styles -->
+  <link rel="stylesheet" href="./css/style.css">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="body">
 
 
 
 
 <main class="storage flex flex--main">
   <div class="storage__icons">
-    <img src="./images/logo.svg" alt="Fylo" class="storage_logo">
-    <div class="storage__icons__container">
-      <div class="storage__icons__icon"></div>
-      <div class="storage__icons__icon"></div>
-      <div class="storage__icons__icon"></div>
+    <img src="./images/logo.svg" alt="Fylo" class="storage__logo">
+    <div class="storage__icons__container flex">
+      <div class="storage__icons__icon-1"></div>
+      <div class="storage__icons__icon-2"></div>
+      <div class="storage__icons__icon-3"></div>
     </div>
   </div>
   <div class="storage__info">
-    <p class="storage__info__text">You’ve used 815 GB of your storage</p>
-    <div class="storage__info__bubble">185 <span>GB Left</span></div>
+    <p class="storage__info__text">You’ve used <span>815 GB</span> of your storage</p>
+    <div class="storage__info__bubble flex">185 <span>GB Left</span></div>
     <progress class="storage__info__used"></progress>
-    <div class="storage__info__capacity-container">
+    <div class="storage__info__capacity-container flex">
       <p class="storage__info__capacity__text">0 GB</p>
       <p class="storage__info__capacity__text">1000 GB</p>
     </div>

@@ -1,0 +1,138 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+/* ===================================
+COLORS
+=================================== */
+
+:root {
+    /* Primary */
+    --gradient: linear-gradient(
+            to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%)
+    );
+
+    /* Neutral */
+    --pale-blue: hsl(243, 100%, 93%);
+    --grayish-blue: hsl(229, 7%, 55%);
+    --dark-blue: hsl(228, 56%, 26%);
+    --very-dark-blue: hsl(229, 57%, 11%);
+}
+
+
+
+
+/* ===================================
+TYPOGRAPHY
+=================================== */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--pale-blue);
+}
+
+.storage__info__text span,
+.storage__info__bubble,
+.storage__info__capacity-container {
+    font-weight: 700;
+}
+
+.storage__info__bubble {
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.storage__info__bubble span,
+.storage__info__capacity-container {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+
+
+
+/* ===================================
+GENERAL LAYOUT
+=================================== */
+
+.body {
+    background-color: var(--very-dark-blue);
+    background-image: url("../images/bg-mobile.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.storage,
+.attribution {
+    padding: 0 24px 0 25px;
+}
+
+.storage {
+    padding-top: 127px;
+    padding-bottom: 127px;
+}
+
+.flex--main {
+    row-gap: 16px;
+}
+
+.flex--main > * {
+    flex: 0 1 100%;
+    background-color: var(--dark-blue);
+}
+
+.storage__logo {
+    margin-bottom: 33px;
+}
+
+.storage__icons {
+    box-shadow: 0 75px 100px -30px rgba(0, 0, 0, 0.24776);
+    border-radius: 10px 100px 10px 10px;
+    padding: 40px 108px 40px 41px;
+    max-width: 326px;
+}
+
+[class^="storage__icons__icon-"] {
+    width: 48px;
+    height: 48px;
+    background-color: var(--very-dark-blue);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.storage__icons__icon-1 {
+    background-image: url("../images/icon-document.svg")
+}
+
+.storage__icons__icon-2 {
+    background-image: url("../images/icon-folder.svg")
+}
+
+.storage__icons__icon-3 {
+    background-image: url("../images/icon-upload.svg")
+}
+
+
