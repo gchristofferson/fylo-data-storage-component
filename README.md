@@ -139,6 +139,7 @@ I tried animating the progress bar value, but had trouble figuring that out.  I 
 - [How to center a "position: absolute" element](https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-element#) - Thanks to stackoverflow, I was able to center my absolute positioned info bubble.  
 - [The HTML5 progress Element](https://css-tricks.com/html5-progress-element/) - This is an amazing article by CSS Tricks which helped me style my progress bar. I'd recommend it to anyone still learning this concept.
 - [CSS Triangle](https://css-tricks.com/snippets/css/css-triangle/) - Loved this article on creating a CSS triangle.  The codepen.io demo is what drove the point home for me and helped me finally understand how to create a triangle.
+- [CSS insert image inside linear-gradient](https://stackoverflow.com/questions/67379482/css-insert-image-inside-linear-gradient-half-part) - This stackoverflow question helped me with styling the little ball at the end of the progress bar for Mozilla Firefox. Firefox doesn't support ::after pseudo-elements on the progress bar so I had to figure out another solution.  What I did was layer a svg image with the linear gradient using the method described here.
 
 ## Author
 

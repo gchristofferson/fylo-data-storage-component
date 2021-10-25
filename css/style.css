@@ -164,7 +164,10 @@ GENERAL LAYOUT
 
 .storage__info__used {
     margin-bottom: 10px;
+    background-color: var(--very-dark-blue);
+    border-radius: 10px;
 }
+
 
 .storage__info__bubble {
     background-color: #fff;
@@ -178,10 +181,15 @@ GENERAL LAYOUT
     bottom: -36px;
 }
 
+
 .storage__info__used[value] {
     /* Reset the default appearance */
     -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
+
+    /* Get rid of default border in Firefox. */
+    border: none;
 
     width: 100%;
     height: 20px;
@@ -192,6 +200,15 @@ GENERAL LAYOUT
     background-color: var(--very-dark-blue);
     border-radius: 10px;
     padding: 3px;
+}
+
+.storage__info__used[value]::-moz-progress-bar {
+    background: var(--gradient), url("../images/circle.svg") calc(100% - 3px);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    height: calc(100% - 6px);
+    margin: 3px 0 auto 3px;
 }
 
 .storage__info__used[value]::-webkit-progress-value {
@@ -209,6 +226,7 @@ GENERAL LAYOUT
     top: 5px;
     background-color: #fff;
 }
+
 
 @media (min-width: 969px) {
     .flex--main {
